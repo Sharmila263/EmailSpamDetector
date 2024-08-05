@@ -29,7 +29,8 @@ print("Model accuracy:", score)
 st.markdown("<h1>Email Spam Detector </h1>",unsafe_allow_html=True)
 
 st.markdown("<h3> Check whether your Mail  is Spam or Ham:</h3>",unsafe_allow_html=True)
-st.image(r"C:\Users\sharm\Downloads\spamm.jpg",width=400)
+image_url="https://github.com/Sharmila263/EmailSpamDetector/blob/main/spamm.jpg"
+st.image(image_url)
 st.markdown("<h3> Please enter the Email </h3>",unsafe_allow_html=True)
 email = st.text_input("Drop your Mail here")
 if st.button("Check"):
