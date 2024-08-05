@@ -7,7 +7,8 @@ from sklearn.svm import SVC
 import streamlit as st
 
 # Load and preprocess data
-data = pd.read_csv(r"C:\Users\sharm\Downloads\spam mail.csv")
+csv_url= "https://raw.githubusercontent.com/Sharmila263/EmailSpamDetector/main/spam%20mail.csv"
+data = pd.read_csv(csv_url)
 data['category'] = data['Category'].map({'spam': 1, 'ham': 0})
 vectorizer = CountVectorizer()
 x = vectorizer.fit_transform(data['Masseges'])
